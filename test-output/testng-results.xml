@@ -1,59 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-09-05T19:16:21Z" name="cleartrip" finished-at="2019-09-05T19:17:50Z" duration-ms="88700">
+  <suite started-at="2019-09-06T10:51:21Z" name="Default suite" finished-at="2019-09-06T10:51:36Z" duration-ms="15499">
     <groups>
     </groups>
-    <test started-at="2019-09-05T19:16:21Z" name="cleartripAssignment" finished-at="2019-09-05T19:17:50Z" duration-ms="88700">
-      <class name="com.cleartrip.tests.roundtrip.RoundTrip">
-        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:com.cleartrip.tests.roundtrip.RoundTrip@5f058f00]" started-at="2019-09-05T19:16:22Z" name="initializeBrowser" finished-at="2019-09-05T19:16:39Z" duration-ms="17132" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method signature="oneWayTrip(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cleartrip.tests.roundtrip.RoundTrip@5f058f00]" started-at="2019-09-05T19:16:39Z" name="oneWayTrip" data-provider="testdata" finished-at="2019-09-05T19:17:50Z" duration-ms="70477" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sivamutyala0310@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Mr]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[siva]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[mutyala]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[9989233795]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[s]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- oneWayTrip -->
-      </class> <!-- com.cleartrip.tests.roundtrip.RoundTrip -->
+    <test started-at="2019-09-06T10:51:21Z" name="Default test" finished-at="2019-09-06T10:51:36Z" duration-ms="15499">
       <class name="com.cleartrip.tests.ClearTripOneWayTrip">
-        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:com.cleartrip.tests.ClearTripOneWayTrip@192d43ce]" started-at="2019-09-05T19:16:22Z" name="initializeBrowser" finished-at="2019-09-05T19:16:42Z" duration-ms="19490" status="PASS">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:com.cleartrip.tests.ClearTripOneWayTrip@6eda5c9]" started-at="2019-09-06T10:51:22Z" name="initializeBrowser" finished-at="2019-09-06T10:51:36Z" duration-ms="14584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method signature="oneWayTrip(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cleartrip.tests.ClearTripOneWayTrip@192d43ce]" started-at="2019-09-05T19:16:42Z" name="oneWayTrip" data-provider="testdata" finished-at="2019-09-05T19:17:44Z" duration-ms="62303" status="PASS">
+        <test-method signature="oneWayTrip(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cleartrip.tests.ClearTripOneWayTrip@6eda5c9]" started-at="2019-09-06T10:51:36Z" name="oneWayTrip" data-provider="testdata" finished-at="2019-09-06T10:51:36Z" duration-ms="62" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -86,10 +44,43 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.pageactions.FindElement.findElement(FindElement.java:22)
+at com.cleartrip.tests.ClearTripOneWayTrip.oneWayTrip(ClearTripOneWayTrip.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oneWayTrip -->
       </class> <!-- com.cleartrip.tests.ClearTripOneWayTrip -->
-    </test> <!-- cleartripAssignment -->
-  </suite> <!-- cleartrip -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

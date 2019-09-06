@@ -12,6 +12,8 @@ import org.testng.annotations.Test;
 
 import com.cleartrip.ConstantFilePaths;
 import com.cleartrip.TestBase;
+import com.pageactions.ActionsClass;
+import com.pageactions.FindElement;
 import com.utils.LogReports;
 import com.utils.ReadLocatorsFile;
 import com.utils.TestDataProvider;
@@ -20,32 +22,32 @@ public class ClearTripOneWayTrip extends TestBase
 {
 	Properties properties1;
 	LogReports log = new LogReports();
+	String xpath;
+	String sendKeys;
 	
 	@Test(dataProvider = "testdata",dataProviderClass = TestDataProvider.class)
 	
 	public void oneWayTrip(String email,String titleInitial,String firstName,String lastName,String phoneNbr,String str) throws IOException, Exception 
 	{	
 		properties1 = ReadLocatorsFile.loadProperty(ConstantFilePaths.LOCATORS_FILE);
-		String nFromPlace = properties1.getProperty("fromPlace");
-		String nFromPlaceValue = properties1.getProperty("fromPlaceValue");
-		driver.findElement(By.xpath(nFromPlace)).sendKeys(nFromPlaceValue);
+		 xpath = properties1.getProperty("fromPlace");
+		 sendKeys = properties1.getProperty("fromPlaceValue");
+		FindElement.findElement(driver, xpath, sendKeys);
 		log.info("sending FromPlace value:");
-		Actions action = new Actions(driver);
-		action.sendKeys(Keys.ENTER).build().perform();
-		String nToPlace = properties1.getProperty("toPlace");
-		String ntoPlaceValue = properties1.getProperty("toPlaceValue");
-		driver.findElement(By.xpath(nToPlace)).sendKeys(ntoPlaceValue);
+		ActionsClass.enterSendkeys(driver);
+		 xpath = properties1.getProperty("toPlace");
+		 sendKeys= properties1.getProperty("toPlaceValue");
+		FindElement.findElement(driver, xpath, sendKeys);
 		Thread.sleep(3000);
 		log.info("sending  Toplace value:");
-		action.sendKeys(Keys.ENTER).build().perform();
-		String nDateOfJourney = properties1.getProperty("dateOfJourney");
-		String nDateOfJourneyValue = properties1.getProperty("dateOfJourneyValue");
-		driver.findElement(By.xpath(nDateOfJourney)).click();
-		driver.findElement(By.xpath(nDateOfJourneyValue)).click();
+		ActionsClass.enterSendkeys(driver);
+		xpath = properties1.getProperty("dateOfJourney");
+		sendKeys = properties1.getProperty("dateOfJourneyValue");
+		FindElement.findElement(driver, xpath, sendKeys);
 		log.info("sending date");
 		String nSearchFlight = properties1.getProperty("searchFlight");
 		driver.findElement(By.xpath(nSearchFlight)).click();
-		log.info("searching flight");
+		log.info("clicking on search flight");
 		String nselectFlight = properties1.getProperty("booking");
 		Thread.sleep(5000);
 		driver.findElement(By.xpath(nselectFlight)).click();

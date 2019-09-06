@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.cleartrip.seleniumgrid.SeleniumGrid">
+      <class name="com.cleartrip.tests.ClearTripOneWayTrip">
         <methods>
-          <include name="seleniumGridDriver"/>
+          <include name="initializeBrowser"/>
+          <include name="oneWayTrip" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.cleartrip.seleniumgrid.SeleniumGrid -->
+      </class> <!-- com.cleartrip.tests.ClearTripOneWayTrip -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

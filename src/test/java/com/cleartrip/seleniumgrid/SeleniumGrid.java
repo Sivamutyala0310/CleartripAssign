@@ -14,12 +14,12 @@ public class SeleniumGrid {
 	public static void seleniumGridDriver() throws Exception
 	{
 
-		DesiredCapabilities desiredcapality=DesiredCapabilities.firefox();
+	//	DesiredCapabilities desiredcapality=DesiredCapabilities.firefox();
 		
-		desiredcapality.setPlatform(Platform.WINDOWS);
-		desiredcapality.setCapability(CapabilityType.BROWSER_NAME, "firefox");
-		URL url=new URL("http://localhost:4444/wd/hub");
-		WebDriver driver=new RemoteWebDriver(url,desiredcapality);
+		//desiredcapality.setPlatform(Platform.WINDOWS);
+		//desiredcapality.setCapability(CapabilityType.BROWSER_NAME, "firefox");
+		//URL url=new URL("http://localhost:4444/wd/hub");
+		//WebDriver driver=new RemoteWebDriver(url,desiredcapality);
 		driver.get("http://cleartrip.com");
 		Thread.sleep(4000);
 		System.out.println(driver.getTitle());
