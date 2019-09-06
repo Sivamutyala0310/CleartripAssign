@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  name="cleartrip" parallel="true" thread-count="2">
+  <test name="cleartripAssignment" parallel="true" thread-count="2"  >
+   <!--  <packages>
+      <package name="com.cleartrip.tests.roundtrip"/>
+      <package name="com.cleartrip.tests"/>
+    </packages> -->
+    
+    <classes >
+    	<class name="com.cleartrip.tests.roundtrip.RoundTrip" />
+    	<class name="com.cleartrip.tests.ClearTripOneWayTrip" />
+    </classes>
+  </test> <!-- cleartripAssignment -->
+</suite> <!-- cleartrip -->

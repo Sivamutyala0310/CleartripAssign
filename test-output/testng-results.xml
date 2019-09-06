@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-09-05T19:16:21Z" name="cleartrip" finished-at="2019-09-05T19:17:50Z" duration-ms="88700">
+    <groups>
+    </groups>
+    <test started-at="2019-09-05T19:16:21Z" name="cleartripAssignment" finished-at="2019-09-05T19:17:50Z" duration-ms="88700">
+      <class name="com.cleartrip.tests.roundtrip.RoundTrip">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:com.cleartrip.tests.roundtrip.RoundTrip@5f058f00]" started-at="2019-09-05T19:16:22Z" name="initializeBrowser" finished-at="2019-09-05T19:16:39Z" duration-ms="17132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="oneWayTrip(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cleartrip.tests.roundtrip.RoundTrip@5f058f00]" started-at="2019-09-05T19:16:39Z" name="oneWayTrip" data-provider="testdata" finished-at="2019-09-05T19:17:50Z" duration-ms="70477" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sivamutyala0310@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mr]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[siva]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[mutyala]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9989233795]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[s]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneWayTrip -->
+      </class> <!-- com.cleartrip.tests.roundtrip.RoundTrip -->
+      <class name="com.cleartrip.tests.ClearTripOneWayTrip">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:com.cleartrip.tests.ClearTripOneWayTrip@192d43ce]" started-at="2019-09-05T19:16:22Z" name="initializeBrowser" finished-at="2019-09-05T19:16:42Z" duration-ms="19490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="oneWayTrip(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.cleartrip.tests.ClearTripOneWayTrip@192d43ce]" started-at="2019-09-05T19:16:42Z" name="oneWayTrip" data-provider="testdata" finished-at="2019-09-05T19:17:44Z" duration-ms="62303" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sivamutyala0310@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mr]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[siva]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[mutyala]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9989233795]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[s]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneWayTrip -->
+      </class> <!-- com.cleartrip.tests.ClearTripOneWayTrip -->
+    </test> <!-- cleartripAssignment -->
+  </suite> <!-- cleartrip -->
+</testng-results>

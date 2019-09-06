@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [cleartrip]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="cleartripAssignment(failed)">
+    <classes>
+      <class name="com.cleartrip.tests.ClearTripOneWayTrip">
+        <methods>
+          <include name="initializeBrowser"/>
+          <include name="oneWayTrip" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.cleartrip.tests.ClearTripOneWayTrip -->
+      <class name="com.cleartrip.tests.roundtrip.RoundTrip">
+        <methods>
+          <include name="initializeBrowser"/>
+          <include name="oneWayTrip" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.cleartrip.tests.roundtrip.RoundTrip -->
+    </classes>
+  </test> <!-- cleartripAssignment(failed) -->
+</suite> <!-- Failed suite [cleartrip] -->
